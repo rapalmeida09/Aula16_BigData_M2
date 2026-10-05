@@ -1,8 +1,8 @@
 SELECT 
-	tb_clientes.codigo_cliente, tb_clientes.nome, tb_clientes.cidade,
-    tb_pedidos.codigo_pedido, tb_pedidos.data_pedido,
-    tb_produtos.produto,
-    tb_pedidos.valor
+	tb_pedidos.codigo_pedido, 
+    tb_clientes.codigo_cliente, tb_clientes.nome, tb_clientes.sobrenome, tb_clientes.cidade,
+	tb_pedidos.data_pedido, tb_pedidos.valor,
+    tb_produtos.produto
 FROM
 	tb_produtos
 JOIN tb_itens
